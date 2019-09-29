@@ -1,0 +1,46 @@
+$font-path: '../assets/fonts/';
+
+@font-face {
+  font-family: 'ArcadeClassic';
+  src: url('#{$font-path}ArcadeClassic.eot?#iefix') format('embedded-opentype'), url('#{$font-path}ArcadeClassic.woff') format('woff'), url('#{$font-path}ArcadeClassic.ttf') format('truetype'),
+    url('#{$font-path}ArcadeClassic.svg#ArcadeClassic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ArcadeClassic';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  border: 1px solid #cecece;
+}
+
+.control-panel {
+  text-align: center;
+
+  input,
+  output {
+    margin: 5px;
+    display: block;
+    text-align: center;
+  }
+
+  output {
+    font-size: 0.8rem;
+  }
+
+  .help {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #555;
+  }
+
+  p {
+    margin: 5px;
+  }
+}
